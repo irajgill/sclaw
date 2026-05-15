@@ -80,7 +80,7 @@ const WINS: Array<{ title: string; body: string }> = [
   },
   {
     title: 'Visual builder ships in the box',
-    body: 'ClawStudio drag-and-drop graph → SovereignClaw code → one-click iNFT deploy. The same code path the example uses.',
+    body: 'ZeroForge drag-and-drop graph → sovereignclaw code → one-click iNFT deploy. The same code path the example uses.',
   },
 ];
 
@@ -89,33 +89,35 @@ export default function Home(): JSX.Element {
     <>
       <Header />
       <main>
-        <section className="mx-auto max-w-6xl px-6 pt-20 pb-12">
-          <div className="text-xs uppercase tracking-widest text-accent-2 font-semibold mb-4">
-            Track 1 — agent framework on 0G
+        <section className="mx-auto max-w-6xl px-6 pt-24 pb-14">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs uppercase tracking-widest font-bold mb-6 bg-[rgba(139,92,246,0.10)] border border-[rgba(139,92,246,0.28)] text-accent">
+            ✦ Track 1 — agent framework on 0G
           </div>
-          <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight">
             Sovereign-memory, multi-agent, iNFT-native
             <br />
-            <span className="text-accent-2">framework for 0G.</span>
+            <span className="bg-gradient-to-br from-[#ff8a3d] via-[#ec4899] to-[#8b5cf6] bg-clip-text text-transparent">
+              framework for 0G.
+            </span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-muted max-w-3xl">
+          <p className="mt-6 text-lg md:text-xl text-muted max-w-3xl leading-relaxed">
             Five composable npm packages. Encrypted memory revocable on-chain. Streaming
             TEE-verified inference. ERC-7857 iNFT lifecycle. Reflection loops. Visual builder.
-            <span className="text-text"> Working agent in under 10 minutes.</span>
+            <span className="text-text font-semibold"> Working agent in under 10 minutes.</span>
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-10 flex flex-wrap gap-3">
             <Link
               href="/quickstart"
-              className="inline-flex items-center rounded-lg bg-accent text-white px-5 py-3 text-sm font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold text-white bg-gradient-to-br from-[#ff8a3d] via-[#ec4899] to-[#8b5cf6] shadow-[0_12px_28px_rgba(236,72,153,0.32)] hover:-translate-y-0.5 hover:shadow-[0_16px_36px_rgba(236,72,153,0.42)] transition-all duration-200"
             >
               Quickstart →
             </Link>
             <a
-              href="https://github.com/irajgill/SovereignClaw"
+              href="https://github.com/irajgill/sclaw"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center rounded-lg bg-surface-2 border border-border-2 px-5 py-3 text-sm font-medium hover:border-accent-2 transition-colors"
+              className="inline-flex items-center rounded-full bg-surface border border-border-2 px-6 py-3.5 text-sm font-semibold hover:-translate-y-0.5 hover:border-accent hover:text-accent transition-all duration-200 shadow-[0_4px_14px_rgba(124,92,255,0.08)]"
             >
               GitHub
             </a>
@@ -123,7 +125,7 @@ export default function Home(): JSX.Element {
               href="https://oracle-production-5db4.up.railway.app/healthz"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center rounded-lg bg-surface-2 border border-border-2 px-5 py-3 text-sm font-medium hover:border-accent-2 transition-colors"
+              className="inline-flex items-center rounded-full bg-surface border border-border-2 px-6 py-3.5 text-sm font-semibold hover:-translate-y-0.5 hover:border-accent hover:text-accent transition-all duration-200 shadow-[0_4px_14px_rgba(124,92,255,0.08)]"
             >
               Live oracle
             </a>
@@ -131,14 +133,14 @@ export default function Home(): JSX.Element {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-20">
-          <div className="rounded-xl border border-border bg-surface/40 overflow-hidden">
-            <div className="flex flex-wrap border-b border-border bg-surface-2/40">
+          <div className="rounded-2xl border border-border bg-surface/80 overflow-hidden shadow-[0_12px_40px_rgba(124,92,255,0.10)]">
+            <div className="flex flex-wrap border-b border-border bg-surface-2/60">
               {SNIPPETS.map((s, i) => (
                 <a
                   key={s.id}
                   href={`#snippet-${s.id}`}
-                  className={`px-5 py-3 text-sm border-r border-border ${
-                    i === 0 ? 'text-text bg-surface' : 'text-muted hover:text-text'
+                  className={`px-5 py-3.5 text-sm font-semibold border-r border-border transition-colors ${
+                    i === 0 ? 'text-accent bg-surface' : 'text-muted hover:text-accent hover:bg-surface'
                   }`}
                 >
                   {s.label}
@@ -152,7 +154,7 @@ export default function Home(): JSX.Element {
                   id={`snippet-${s.id}`}
                   className="p-6 border-b border-border last:border-0"
                 >
-                  <div className="text-xs uppercase tracking-widest text-muted font-semibold mb-3">
+                  <div className="text-xs uppercase tracking-widest text-accent font-bold mb-3">
                     {s.label}
                   </div>
                   <pre>
@@ -165,24 +167,39 @@ export default function Home(): JSX.Element {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-20">
-          <h2 className="text-2xl font-semibold mb-8">Why SovereignClaw</h2>
+          <h2 className="text-3xl font-extrabold mb-8 bg-gradient-to-br from-[#ff8a3d] via-[#ec4899] to-[#8b5cf6] bg-clip-text text-transparent inline-block">
+            Why ZeroForge
+          </h2>
           <div className="grid md:grid-cols-2 gap-5">
-            {WINS.map((w) => (
-              <div key={w.title} className="rounded-lg border border-border bg-surface-2/40 p-5">
-                <div className="text-text font-semibold mb-2">{w.title}</div>
-                <div className="text-muted text-sm leading-relaxed">{w.body}</div>
-              </div>
-            ))}
+            {WINS.map((w, i) => {
+              const tones = [
+                'from-[#ff8a3d]/12 to-[#ec4899]/12 border-[rgba(255,138,61,0.25)]',
+                'from-[#ec4899]/12 to-[#8b5cf6]/12 border-[rgba(236,72,153,0.25)]',
+                'from-[#8b5cf6]/12 to-[#0ab7e6]/12 border-[rgba(139,92,246,0.25)]',
+                'from-[#0ab7e6]/12 to-[#1fbf7a]/12 border-[rgba(10,183,230,0.25)]',
+                'from-[#1fbf7a]/12 to-[#f5b942]/12 border-[rgba(31,191,122,0.25)]',
+              ];
+              const tone = tones[i % tones.length];
+              return (
+                <div
+                  key={w.title}
+                  className={`rounded-2xl border bg-gradient-to-br ${tone} bg-surface p-6 shadow-[0_6px_20px_rgba(124,92,255,0.06)] hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(124,92,255,0.14)] transition-all duration-200`}
+                >
+                  <div className="text-text font-bold text-base mb-2">{w.title}</div>
+                  <div className="text-muted text-sm leading-relaxed">{w.body}</div>
+                </div>
+              );
+            })}
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-20">
-          <h2 className="text-2xl font-semibold mb-4">Live on 0G Galileo Testnet</h2>
+        <section className="mx-auto max-w-6xl px-6 pb-24">
+          <h2 className="text-3xl font-extrabold mb-3 text-text">Live on 0G Galileo Testnet</h2>
           <p className="text-muted mb-6">
             Real contracts, real iNFT mints, real TEE-attested inference. Click through and verify
             on chainscan.
           </p>
-          <div className="rounded-lg border border-border bg-surface-2/40 overflow-x-auto">
+          <div className="rounded-2xl border border-border bg-surface overflow-x-auto shadow-[0_8px_28px_rgba(124,92,255,0.08)]">
             <table className="w-full text-sm">
               <thead>
                 <tr>

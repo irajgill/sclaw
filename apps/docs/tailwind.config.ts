@@ -6,16 +6,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: '#0b0d10',
-        surface: '#11151a',
-        'surface-2': '#161b22',
-        border: '#222831',
-        'border-2': '#2a313c',
-        muted: '#9aa3ad',
-        text: '#e6e9ee',
-        accent: '#7c5cff',
-        'accent-2': '#a48bff',
-        success: '#4ade80',
+        // ZeroForge — light + playful palette
+        bg: '#fdfbff',
+        surface: '#ffffff',
+        'surface-2': '#f7f3ff',
+        border: '#ece4ff',
+        'border-2': '#dbcdff',
+        muted: '#6b6390',
+        text: '#221c3d',
+        accent: '#8b5cf6',
+        'accent-2': '#ec4899',
+        'accent-3': '#ff8a3d',
+        success: '#1fbf7a',
       },
       fontFamily: {
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],

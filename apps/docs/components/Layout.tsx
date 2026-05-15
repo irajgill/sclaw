@@ -16,20 +16,28 @@ const NAV: Array<{ href: string; label: string }> = [
 
 export function Header(): JSX.Element {
   return (
-    <header className="border-b border-border bg-bg/80 backdrop-blur sticky top-0 z-30">
+    <header className="border-b border-border bg-surface/80 backdrop-blur-md sticky top-0 z-30 shadow-[0_4px_18px_rgba(124,92,255,0.06)]">
       <div className="mx-auto max-w-7xl flex items-center gap-6 px-6 py-4">
-        <Link href="/" className="font-semibold tracking-tight text-lg">
-          SovereignClaw
+        <Link href="/" className="flex items-center gap-2.5 tracking-tight text-lg group">
+          <span className="grid place-items-center h-8 w-8 rounded-xl text-white text-sm font-bold shadow-[0_6px_14px_rgba(236,72,153,0.32)] bg-gradient-to-br from-[#ff8a3d] via-[#ec4899] to-[#8b5cf6] transition-transform group-hover:scale-105">
+            ✦
+          </span>
+          <span className="font-extrabold bg-gradient-to-br from-[#ff8a3d] via-[#ec4899] to-[#8b5cf6] bg-clip-text text-transparent">
+            ZeroForge
+          </span>
+          <span className="hidden sm:inline text-xs font-medium text-muted">
+            your sovereignclaw
+          </span>
         </Link>
         <nav className="hidden md:flex gap-5 text-sm text-muted">
-          <Link href="/quickstart" className="hover:text-text">
+          <Link href="/quickstart" className="hover:text-accent transition-colors">
             Docs
           </Link>
           <a
-            href="https://github.com/irajgill/SovereignClaw"
+            href="https://github.com/irajgill/sclaw"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-text"
+            className="hover:text-accent transition-colors"
           >
             GitHub
           </a>
@@ -37,13 +45,13 @@ export function Header(): JSX.Element {
             href="https://www.npmjs.com/package/@sovereignclaw/core"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-text"
+            className="hover:text-accent transition-colors"
           >
             npm
           </a>
         </nav>
-        <span className="ml-auto inline-flex items-center gap-2 text-xs text-muted">
-          <span className="h-2 w-2 rounded-full bg-success" />
+        <span className="ml-auto inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold text-success bg-[rgba(31,191,122,0.12)] border border-[rgba(31,191,122,0.3)]">
+          <span className="h-2 w-2 rounded-full bg-success animate-pulse" />
           Live on 0G Galileo
         </span>
       </div>
@@ -53,8 +61,8 @@ export function Header(): JSX.Element {
 
 export function Sidebar({ active }: { active?: string }): JSX.Element {
   return (
-    <aside className="hidden md:block w-64 shrink-0 border-r border-border min-h-[calc(100vh-65px)]">
-      <nav className="flex flex-col p-6 text-sm gap-1">
+    <aside className="hidden md:block w-64 shrink-0 border-r border-border min-h-[calc(100vh-65px)] bg-surface/40">
+      <nav className="flex flex-col p-6 text-sm gap-1.5">
         {NAV.map((item) => {
           const isActive = active === item.href;
           return (
@@ -62,10 +70,10 @@ export function Sidebar({ active }: { active?: string }): JSX.Element {
               key={item.href}
               href={item.href}
               className={
-                'rounded px-3 py-2 transition-colors ' +
+                'rounded-lg px-3.5 py-2 transition-all duration-150 font-medium ' +
                 (isActive
-                  ? 'bg-surface-2 text-text'
-                  : 'text-muted hover:bg-surface hover:text-text')
+                  ? 'bg-gradient-to-r from-[rgba(236,72,153,0.10)] to-[rgba(139,92,246,0.10)] text-accent border border-[rgba(139,92,246,0.22)] shadow-[0_2px_8px_rgba(139,92,246,0.08)]'
+                  : 'text-muted hover:bg-surface-2 hover:text-accent border border-transparent')
               }
             >
               {item.label}
@@ -79,26 +87,28 @@ export function Sidebar({ active }: { active?: string }): JSX.Element {
 
 export function Footer(): JSX.Element {
   return (
-    <footer className="mt-24 border-t border-border bg-surface/40">
-      <div className="mx-auto max-w-7xl px-6 py-10 text-sm text-muted flex flex-wrap gap-6 justify-between">
+    <footer className="mt-24 border-t border-border bg-surface/60">
+      <div className="mx-auto max-w-7xl px-6 py-12 text-sm text-muted flex flex-wrap gap-8 justify-between">
         <div>
-          <div className="font-semibold text-text mb-2">SovereignClaw</div>
+          <div className="font-extrabold text-lg mb-2 bg-gradient-to-br from-[#ff8a3d] via-[#ec4899] to-[#8b5cf6] bg-clip-text text-transparent">
+            ZeroForge, your sovereignclaw
+          </div>
           <div>Apache-2.0 licensed.</div>
           <div className="mt-1">
             Built on 0G — Storage Log, Compute Router, EVM chain, ERC-7857.
           </div>
         </div>
-        <div className="flex gap-6">
-          <a href="https://github.com/irajgill/SovereignClaw" className="hover:text-text">
+        <div className="flex gap-6 items-start">
+          <a href="https://github.com/irajgill/sclaw" className="hover:text-accent transition-colors font-medium">
             GitHub
           </a>
-          <a href="https://www.npmjs.com/org/sovereignclaw" className="hover:text-text">
+          <a href="https://www.npmjs.com/org/sovereignclaw" className="hover:text-accent transition-colors font-medium">
             npm
           </a>
-          <a href="https://chainscan-galileo.0g.ai" className="hover:text-text">
+          <a href="https://chainscan-galileo.0g.ai" className="hover:text-accent transition-colors font-medium">
             Chainscan
           </a>
-          <a href="https://faucet.0g.ai" className="hover:text-text">
+          <a href="https://faucet.0g.ai" className="hover:text-accent transition-colors font-medium">
             Faucet
           </a>
         </div>
@@ -119,7 +129,7 @@ export function DocsLayout({
       <Header />
       <div className="mx-auto max-w-7xl flex">
         <Sidebar active={active} />
-        <main className="flex-1 px-6 py-10 md:px-10">
+        <main className="flex-1 px-6 py-12 md:px-12">
           <article className="prose">{children}</article>
         </main>
       </div>

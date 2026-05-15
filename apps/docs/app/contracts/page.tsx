@@ -133,17 +133,17 @@ export default function Page(): JSX.Element {
       <h2>Source</h2>
       <ul>
         <li>
-          <a href="https://github.com/irajgill/SovereignClaw/blob/main/contracts/src/AgentNFT.sol">
+          <a href="https://github.com/irajgill/sclaw/blob/main/contracts/src/AgentNFT.sol">
             contracts/src/AgentNFT.sol
           </a>
         </li>
         <li>
-          <a href="https://github.com/irajgill/SovereignClaw/blob/main/contracts/src/MemoryRevocation.sol">
+          <a href="https://github.com/irajgill/sclaw/blob/main/contracts/src/MemoryRevocation.sol">
             contracts/src/MemoryRevocation.sol
           </a>
         </li>
         <li>
-          <a href="https://github.com/irajgill/SovereignClaw/tree/main/contracts/test">
+          <a href="https://github.com/irajgill/sclaw/tree/main/contracts/test">
             contracts/test/ (77 Foundry tests, 128k invariant calls per property)
           </a>
         </li>
