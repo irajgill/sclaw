@@ -20,7 +20,7 @@
 **ZeroForge** is the visual side of the **sovereignclaw** stack: a
 drag-and-drop builder + light, playful UX that compiles the same
 TypeScript code an engineer would write by hand, then deploys a
-sovereign agent (encrypted memory, TEE-attested inference, iNFT mint)
+sovereign agent (encrypted memory, TEE-attested inference, iNFT mint) 
 to 0G in one click.
 
 ## Status
