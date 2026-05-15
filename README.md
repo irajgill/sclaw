@@ -1,6 +1,5 @@
 # ZeroForge, your sovereignclaw
 
-
 > **Open-source, sovereign-memory, multi-agent, iNFT-native agent
 > framework for 0G.** Encrypted persistent memory on 0G Storage,
 > ERC-7857 iNFT lifecycle with cryptographic revocation, TEE-attested
@@ -523,11 +522,11 @@ pnpm benchmark:cold-start --clean  # true cold: wipes node_modules first
   snapshot committed at [contracts/.gas-snapshot](contracts/.gas-snapshot)
   and gated in CI.
 - **123 Vitest unit tests** (35 inft + 39 backend + 18 studio + memory
-  + core + mesh + reflection). EIP-712 byte-equality and tamper-
-  detection assertions in both inft and backend.
+  - core + mesh + reflection). EIP-712 byte-equality and tamper-
+    detection assertions in both inft and backend.
 - **Integration tests against real testnet** (mint + transfer + revoke
-  + post-revoke 410). Bootable in CI via the
-  [`run-integration` PR label](.github/workflows/integration.yml).
+  - post-revoke 410). Bootable in CI via the
+    [`run-integration` PR label](.github/workflows/integration.yml).
 
 ```bash
 pnpm contracts:test                 # all 77 Foundry tests

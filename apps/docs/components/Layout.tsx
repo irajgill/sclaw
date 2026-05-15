@@ -99,16 +99,28 @@ export function Footer(): JSX.Element {
           </div>
         </div>
         <div className="flex gap-6 items-start">
-          <a href="https://github.com/irajgill/sclaw" className="hover:text-accent transition-colors font-medium">
+          <a
+            href="https://github.com/irajgill/sclaw"
+            className="hover:text-accent transition-colors font-medium"
+          >
             GitHub
           </a>
-          <a href="https://www.npmjs.com/org/sovereignclaw" className="hover:text-accent transition-colors font-medium">
+          <a
+            href="https://www.npmjs.com/org/sovereignclaw"
+            className="hover:text-accent transition-colors font-medium"
+          >
             npm
           </a>
-          <a href="https://chainscan-galileo.0g.ai" className="hover:text-accent transition-colors font-medium">
+          <a
+            href="https://chainscan-galileo.0g.ai"
+            className="hover:text-accent transition-colors font-medium"
+          >
             Chainscan
           </a>
-          <a href="https://faucet.0g.ai" className="hover:text-accent transition-colors font-medium">
+          <a
+            href="https://faucet.0g.ai"
+            className="hover:text-accent transition-colors font-medium"
+          >
             Faucet
           </a>
         </div>

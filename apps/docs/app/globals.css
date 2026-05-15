@@ -14,10 +14,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  background-image:
-    radial-gradient(circle at 10% 8%, rgba(236, 72, 153, 0.10) 0%, transparent 40%),
-    radial-gradient(circle at 90% 14%, rgba(10, 183, 230, 0.10) 0%, transparent 45%),
-    radial-gradient(circle at 50% 96%, rgba(245, 185, 66, 0.10) 0%, transparent 48%);
+  background-image: radial-gradient(circle at 10% 8%, rgba(236, 72, 153, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 90% 14%, rgba(10, 183, 230, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 50% 96%, rgba(245, 185, 66, 0.1) 0%, transparent 48%);
   background-attachment: fixed;
 }
 
@@ -43,7 +42,7 @@ pre {
 }
 
 code:not(pre code) {
-  background: rgba(139, 92, 246, 0.10);
+  background: rgba(139, 92, 246, 0.1);
   color: #5a3fc0;
   border: 1px solid rgba(139, 92, 246, 0.22);
   border-radius: 6px;

@@ -140,7 +140,9 @@ export default function Home(): JSX.Element {
                   key={s.id}
                   href={`#snippet-${s.id}`}
                   className={`px-5 py-3.5 text-sm font-semibold border-r border-border transition-colors ${
-                    i === 0 ? 'text-accent bg-surface' : 'text-muted hover:text-accent hover:bg-surface'
+                    i === 0
+                      ? 'text-accent bg-surface'
+                      : 'text-muted hover:text-accent hover:bg-surface'
                   }`}
                 >
                   {s.label}

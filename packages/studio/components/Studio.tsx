@@ -446,7 +446,8 @@ export function StudioFlowNode(props: NodeProps<StudioNodeData>): JSX.Element {
             fontSize: 30,
             lineHeight: 1,
             background: cfg.gradient,
-            boxShadow: '0 12px 26px rgba(124, 92, 255, 0.28), inset 0 1.5px 0 rgba(255,255,255,0.55), inset 0 -2px 0 rgba(34,28,61,0.08)',
+            boxShadow:
+              '0 12px 26px rgba(124, 92, 255, 0.28), inset 0 1.5px 0 rgba(255,255,255,0.55), inset 0 -2px 0 rgba(34,28,61,0.08)',
             position: 'relative',
             overflow: 'hidden',
           }}

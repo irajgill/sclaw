@@ -147,11 +147,9 @@ button {
    BACKGROUND ATMOSPHERE — pastel polka grid + sunrise wash
 ═══════════════════════════════════════════════════════════════════════ */
 body {
-  background:
-    radial-gradient(circle at 8% 12%, rgba(236, 72, 153, 0.10) 0%, transparent 38%),
-    radial-gradient(circle at 92% 18%, rgba(10, 183, 230, 0.10) 0%, transparent 42%),
-    radial-gradient(circle at 50% 96%, rgba(245, 185, 66, 0.10) 0%, transparent 46%),
-    var(--bg);
+  background: radial-gradient(circle at 8% 12%, rgba(236, 72, 153, 0.1) 0%, transparent 38%),
+    radial-gradient(circle at 92% 18%, rgba(10, 183, 230, 0.1) 0%, transparent 42%),
+    radial-gradient(circle at 50% 96%, rgba(245, 185, 66, 0.1) 0%, transparent 46%), var(--bg);
   background-attachment: fixed;
 }
 body::before {
@@ -159,10 +157,11 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: 0;
-  background-image:
-    radial-gradient(rgba(139, 92, 246, 0.18) 1.2px, transparent 1.4px),
+  background-image: radial-gradient(rgba(139, 92, 246, 0.18) 1.2px, transparent 1.4px),
     radial-gradient(rgba(10, 183, 230, 0.12) 1.2px, transparent 1.4px);
-  background-position: 0 0, 14px 14px;
+  background-position:
+    0 0,
+    14px 14px;
   background-size: 28px 28px;
   opacity: 0.55;
   pointer-events: none;
@@ -178,7 +177,7 @@ body::after {
   background: radial-gradient(
     ellipse,
     rgba(139, 92, 246, 0.18) 0%,
-    rgba(10, 183, 230, 0.10) 38%,
+    rgba(10, 183, 230, 0.1) 38%,
     rgba(245, 185, 66, 0.06) 60%,
     transparent 78%
   );
@@ -532,10 +531,8 @@ body::after {
   position: relative;
   min-height: 0;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 18% 24%, rgba(236, 72, 153, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 82% 76%, rgba(10, 183, 230, 0.06) 0%, transparent 55%),
-    var(--bg-1);
+  background: radial-gradient(circle at 18% 24%, rgba(236, 72, 153, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 82% 76%, rgba(10, 183, 230, 0.06) 0%, transparent 55%), var(--bg-1);
 }
 
 .canvas-wrap .react-flow__background {
@@ -760,11 +757,11 @@ body::after {
   box-shadow:
     0 24px 56px rgba(124, 92, 255, 0.24),
     0 0 0 1.5px var(--node-accent, rgba(124, 92, 255, 0.45)),
-    0 0 60px var(--node-glow, rgba(139, 92, 246, 0.30));
+    0 0 60px var(--node-glow, rgba(139, 92, 246, 0.3));
   transform: translateY(-5px) rotate(-0.2deg);
 }
 .sc-node:hover .sc-node-icon-wrap {
-  transform: scale(1.10) rotate(-4deg);
+  transform: scale(1.1) rotate(-4deg);
 }
 .sc-node:hover .sc-node-glow-bar {
   height: 6px;
@@ -776,7 +773,7 @@ body::after {
 .sc-node.selected {
   border-color: var(--node-accent, var(--purple));
   box-shadow:
-    0 0 0 3px var(--node-glow, rgba(139, 92, 246, 0.30)),
+    0 0 0 3px var(--node-glow, rgba(139, 92, 246, 0.3)),
     0 20px 50px rgba(124, 92, 255, 0.26),
     0 0 60px var(--node-glow, rgba(139, 92, 246, 0.32));
   transform: translateY(-4px);
@@ -806,8 +803,11 @@ body::after {
   align-items: center !important;
   padding: 22px 22px 20px !important;
   border-bottom: 1px solid var(--border) !important;
-  background:
-    linear-gradient(135deg, var(--node-icon-bg, rgba(139, 92, 246, 0.10)) 0%, rgba(255, 255, 255, 0) 65%),
+  background: linear-gradient(
+      135deg,
+      var(--node-icon-bg, rgba(139, 92, 246, 0.1)) 0%,
+      rgba(255, 255, 255, 0) 65%
+    ),
     linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)) !important;
   position: relative;
 }
@@ -930,7 +930,9 @@ body::after {
   border-radius: 2px;
   background: var(--node-accent, var(--purple));
   opacity: 0.45;
-  transition: opacity var(--t-sm), width var(--t-sm);
+  transition:
+    opacity var(--t-sm),
+    width var(--t-sm);
 }
 .sc-node:hover .sc-node-stat-row::before {
   opacity: 0.85;
@@ -974,8 +976,11 @@ body::after {
   font-family: var(--font-sans) !important;
   padding: 14px 16px 14px 22px !important;
   margin-top: 12px !important;
-  background:
-    linear-gradient(135deg, var(--node-icon-bg, rgba(139, 92, 246, 0.10)) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
+  background: linear-gradient(
+    135deg,
+    var(--node-icon-bg, rgba(139, 92, 246, 0.1)) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  ) !important;
   border-left: 3px solid var(--node-accent, var(--purple)) !important;
   border-radius: 0 12px 12px 0 !important;
   word-break: break-word !important;
@@ -1003,8 +1008,11 @@ body::after {
   flex-wrap: wrap !important;
   gap: 8px !important;
   border-top: 1px solid var(--border) !important;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0), var(--node-icon-bg, rgba(124, 92, 255, 0.04))) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    var(--node-icon-bg, rgba(124, 92, 255, 0.04))
+  ) !important;
 }
 
 .sc-node-tag {
@@ -1663,7 +1671,9 @@ input:checked + .toggle-slider::before {
   background: #ffffff;
   border: 1px solid var(--border);
   border-radius: var(--r);
-  transition: border-color var(--t-md), background var(--t-md);
+  transition:
+    border-color var(--t-md),
+    background var(--t-md);
 }
 .deploy-agent-row.minted {
   border-color: rgba(31, 191, 122, 0.4);
