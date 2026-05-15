@@ -1,5 +1,6 @@
 # ZeroForge, your sovereignclaw
 
+
 > **Open-source, sovereign-memory, multi-agent, iNFT-native agent
 > framework for 0G.** Encrypted persistent memory on 0G Storage,
 > ERC-7857 iNFT lifecycle with cryptographic revocation, TEE-attested
