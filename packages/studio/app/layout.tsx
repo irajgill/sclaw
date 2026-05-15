@@ -4,8 +4,9 @@ import './globals.css';
 import 'reactflow/dist/style.css';
 
 export const metadata: Metadata = {
-  title: 'ClawStudio',
-  description: 'Drag-and-drop visual builder for SovereignClaw agents, meshes, and iNFTs on 0G.',
+  title: 'ZeroForge, your sovereignclaw',
+  description:
+    'ZeroForge — drag-and-drop visual builder for sovereignclaw agents, meshes, and iNFTs on 0G.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }): JSX.Element {

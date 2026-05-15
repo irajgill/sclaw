@@ -133,14 +133,14 @@ export function Canvas(): JSX.Element {
         fitView
         proOptions={{ hideAttribution: true }}
       >
-        <Background variant={BackgroundVariant.Dots} gap={16} size={1} color="#232a38" />
+        <Background variant={BackgroundVariant.Dots} gap={18} size={1.4} color="#8b5cf6" />
         <Controls position="bottom-right" />
         <MiniMap
           pannable
           zoomable
-          maskColor="rgba(11,14,20,0.55)"
-          nodeStrokeColor={() => '#6ee7b7'}
-          nodeColor={() => '#1a1f2b'}
+          maskColor="rgba(255,255,255,0.55)"
+          nodeStrokeColor={() => '#ec4899'}
+          nodeColor={() => '#ffffff'}
         />
       </ReactFlow>
     </div>

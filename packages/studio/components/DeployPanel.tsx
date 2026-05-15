@@ -160,8 +160,8 @@ export function DeployPanel(): JSX.Element {
         <div
           className="deploy-phase-line"
           style={{
-            background: 'rgba(0,255,136,0.06)',
-            borderColor: 'rgba(0,255,136,0.18)',
+            background: 'rgba(31,191,122,0.12)',
+            borderColor: 'rgba(31,191,122,0.35)',
             color: 'var(--green)',
           }}
         >
