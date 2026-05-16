@@ -1,4 +1,4 @@
-# ZeroForge, your sovereignclaw
+# ZeroForge, your sovereignclaw 
 
 > **Open-source, sovereign-memory, multi-agent, iNFT-native agent
 > framework for 0G.** Encrypted memory on 0G Storage, TEE-attested
